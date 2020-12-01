@@ -1,0 +1,50 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+			<title>Fuzzy Graphics</title>
+		<link rel="stylesheet" href="./css/estilos.css"/>
+
+		</head>
+		<body>
+
+	 	<div id="particles-js"></div>
+				<div class="texto">
+							
+				<p><img src="./images/UEBlogo.png"/ height="70px" width="70px"></img></p><br>
+				<h2>Fuzzy Graphics</h2>
+			</div>
+	<div class="principal contenedor">
+		<article>
+				<canvas id="grafos" width="600px"  style="background-color: #FFF" height="400px">Este navegador no es compatible con CANVAS<br></canvas>
+				<h2 class="titulo">*Número de filas / Columnas</h2>
+				<p class="comentar">Ingresa el número de filas y columnas que tendrá la matriz de grafos.<br>- Esta deberá tener de valores un minimo de 2 y como máximo 5 (nxn)</p>
+
+				<input type="number" id="TAMANIO" min="2"  max="5" style="height:120px; height: 40px" required="required" />
+				<button class="boton" style="display:right; height:70px; height: 40px;" onclick=verify();>Enviar</button>
+		</article>
+		</div>
+
+
+		<!-- windows -->
+		<div id="dialogoverlay"></div>
+		<div id="dialogbox">
+		  <div>
+		    <div id="dialogboxhead"></div>
+		    <div id="dialogboxbody">
+		    </div>
+		 <div id="defineMatriz"/>
+		  	<label type="number" min="0" max="5" id="listadoMatriz" style="height: 50px width:20px" required></label><br>
+		  </div>
+		    <div id="dialogboxfoot"></div>
+		  </div>
+		</div>
+		</body>
+
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="./js/particles.min.js"></script>
+		<script src="./js/particulas.js"></script>
+		<script src="./js/logic.js" ></script>
+		</html>
